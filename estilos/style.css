@@ -9,6 +9,7 @@
 */
 
 body {
-  background-color: lightgreen;
-  color: yellow;
+  background-color: lightgray;
+  color: darkblue;
+  text-shadow: 1px 1px 3px black;
 }
