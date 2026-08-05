@@ -60,3 +60,20 @@ nav#menu a:hover {
   background-color: var(--destaque-inverso);
   color: var(--destaque);
 }
+
+main {
+
+}
+
+section#ficha {
+  
+}
+
+section#ficha a {
+  font-size: 30px;
+  color: var(--destaque-inverso);
+}
+
+section#ficha div#social {
+  margin: 15px 0px 0px 15px;
+}
