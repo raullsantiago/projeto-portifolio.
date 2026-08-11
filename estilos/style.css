@@ -118,3 +118,16 @@ div#social a {
 div#social a:hover {
   color: var(--destaque-inverso);
 }
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article {
+  background-color: var(--fundo-card);
+  color: var(--destaque);
+  margin: 10px 0px;
+  padding: 20px;
+  border-radius: 7px;
+}
+
