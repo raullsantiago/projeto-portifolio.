@@ -131,3 +131,49 @@ article {
   border-radius: 7px;
 }
 
+#skills-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skills-conteiner .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#skills-conteiner .nome{
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skills-conteiner .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skills-conteiner .barra {
+  background-color: var(--fundo-principal);
+  height: 10px;
+  width: 100%;
+  border-radius: 4px; 
+}
+
+#skills-conteiner .progresso {
+  background-color: var(--destaque-inverso);
+  height: 100%;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #skills-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+
