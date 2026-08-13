@@ -39,6 +39,7 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.479);
 }
 
 nav#menu ul {
@@ -206,9 +207,79 @@ article {
   color: var(--texto);
 }
 
+div#projetos-conteiner {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+div#projetos-conteiner .projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 8px solid var(--destaque-inverso);
+  color: var(--texto);
+  transition: border-left-width .6s, border-color .6s;
+}
+
+div#projetos-conteiner .projetos:hover {
+  border-left-width: 30px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+div#projetos-conteiner .foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--destaque);
+  text-align: center;
+  color: var(--texto-inverso);
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.479);
+}
+
+footer a {
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--texto);
+  text-decoration: underline;
+}
+
+
 @media screen and (min-width: 768px) {
   #skills-conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  div#projetos-conteiner .projetos {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  div#projetos-conteiner .projeto-info {
+    max-width: 80%;
+  }
+
+  div#projetos-conteiner img {
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }
