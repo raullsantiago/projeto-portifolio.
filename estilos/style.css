@@ -40,6 +40,8 @@ header {
   justify-content: flex-end;
   align-content: center;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.479);
+  position: sticky;
+  top: 0;
 }
 
 nav#menu ul {
@@ -263,6 +265,29 @@ footer a:hover {
 
 
 @media screen and (min-width: 768px) {
+
+  header {
+    z-index: 4;
+  }
+
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+    gap: 10px;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: 800px;
+    position: sticky;
+    top: 70px;
+} 
+
+  section#detalhes {
+    grid-column: 3 / 4;
+    
+  }
+
+
   #skills-conteiner {
     display: grid;
     grid-template-columns: 1fr 1fr;
