@@ -277,9 +277,10 @@ footer a:hover {
 
   section#ficha {
     grid-column: 2 / 3;
-    height: 800px;
     position: sticky;
-    top: 70px;
+    top: 65px;
+    height: 600px;  
+    align-self: start;
 } 
 
   section#detalhes {
